@@ -49,5 +49,8 @@ div {
 </body>
 </html>
 EOM
-
+##################
 open -a /Applications/Google\ Chrome.app $FILE
+#############################################################
+## TextExpander Abbreviation for this snippet: ..w1
+#############################################################
