@@ -39,5 +39,5 @@
 ![Wallpaper 8](./showcase-images/screenshot-wallpaper-8.jpg)
 
 #### HTML Wallpaper 0 Multiline Quote Boxes with Square Pdf Print:   
-**[Sample file here](sample-and-output-files/sample-quotes-text-for-multiline-wallpaper0.txt) | [HTML output here](sample-and-output-files/quotes_TMP-wallpaper-wm0.html)   
+[Sample file here](sample-and-output-files/sample-quotes-text-for-multiline-wallpaper0.txt) | [HTML output here](sample-and-output-files/quotes_TMP-wallpaper-wm0.html)   
 ![Wallpaper Multiline 0 with Blocks](./showcase-images/screenshot-wallpaper-multiline-0.jpg)
