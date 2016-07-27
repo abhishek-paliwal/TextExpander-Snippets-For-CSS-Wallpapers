@@ -41,3 +41,6 @@
 #### HTML Wallpaper 0 Multiline Quote Boxes with Square Pdf Print:   
 [Sample text file for clipboard here](sample-and-output-files/sample-quotes-text-for-multiline-wallpaper0.txt) | [Wallpaper HTML output here](sample-and-output-files/quotes_TMP-wallpaper-wm0.html)
 ![Wallpaper Multiline 0 with Blocks](./showcase-images/screenshot-wallpaper-multiline-0.jpg)
+
+#### HTML Wallpaper CD Covers 1 + PDF Print:
+![HTML Wallpaper CD Covers 1 + PDF Print](./showcase-images/screenshot-wallpaper-wcd1.jpg)
