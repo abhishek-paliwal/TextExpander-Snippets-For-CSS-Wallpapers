@@ -140,6 +140,7 @@ EOM
 open -a /Applications/Google\ Chrome.app $FILE
 
 ############################################################
+
 ############################################################
 ## This TextExpander Snippet Settings:
 ## Label: HTML wallpaper 3 + A4 cover
