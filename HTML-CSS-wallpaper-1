@@ -1,0 +1,53 @@
+#! /bin/bash
+# This script generate a random html wallpaper file from the clipboard.
+FILE="/Users/abhishek/Desktop/_TMP_Automator_results_/TMP-wallpaper-1.html";
+cat > $FILE <<- EOM
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://use.fontawesome.com/8cd0876759.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+<style>
+div {
+    /* width: 500px; */
+    /* height:500px;*/
+    padding: 20px;
+    margin: 0px;
+    /* border: 10px solid rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`); */
+    /* background: rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`); */
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    line-height:1;
+    /* text-transform: lowercase; */
+}
+
+#p1 {background-color:rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`);}
+#p2 {background-color:rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`);}
+#p3 {background-color:rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`);}
+#p4 {background-color:rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`);}
+#p5 {background-color:rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`);}
+#text1 {color:rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`);}
+#text2 {color:rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`);}
+
+@media print {
+    h1,div {page-break-before: always;}
+}
+</style>
+
+</head>
+<body>
+
+<div id="p1"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard</div>
+<div id="p2"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard</div>
+<div id="p3"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard</div>
+<div id="p4"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard</div>
+<div id="p5"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard</div>
+<div id="text1"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard</div>
+<div id="text2"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard</div>
+
+</body>
+</html>
+EOM
+
+open -a /Applications/Google\ Chrome.app $FILE
