@@ -10,6 +10,7 @@
 * Just run the script, and the browser should open with thus created wallpaper.
 * You will see the word `%clipboard` in these snippets. It's the inbuilt Clipboard variable used by TextExpander.
 * NOTE: All the images are generated randomly at the runtime of the snippet. Images courtesy: [Unsplash.com](https://unsplash.com/?grid=multi)
+
 ----------
 
 ### Here's how the generated wallpapers look like:
