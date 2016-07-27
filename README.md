@@ -37,3 +37,6 @@
 
 #### HTML Wallpaper 8 + A4 Book Cover:
 ![Wallpaper 8](./showcase-images/screenshot-wallpaper-8.jpg)
+
+#### HTML Wallpaper 0 Multiline Quote Boxes with Square Pdf Print:
+![Wallpaper Multiline 0 with Blocks](./showcase-images/screenshot-wallpaper-multiline-0.jpg)
