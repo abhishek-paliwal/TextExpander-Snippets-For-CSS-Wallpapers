@@ -3,8 +3,8 @@
 
 ### How to use:
 
-* Open any HTML-Wallpaper???.txt file
-* On your Mac computer, create a TextExpander snippet and copy-paste the code from that file into it.
+* Open any HTML-Wallpaper???.txt file from this folder in a text editor.
+* On your Mac computer, create a TextExpander snippet and copy-paste the code from the above file into it.
 * Remember to save the snippet as a 'Shell Script'  
 ![Save as shell script option](./showcase-images/screenshot-shell-script-howto.jpg)
 * Just run the script, and the browser should open with thus created wallpaper.
