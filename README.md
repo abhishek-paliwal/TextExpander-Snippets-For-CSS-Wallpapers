@@ -43,4 +43,4 @@
 ![Wallpaper Multiline 0 with Blocks](./showcase-images/screenshot-wallpaper-multiline-0.jpg)
 
 #### HTML Wallpaper CD Covers 1 + PDF Print:
-![HTML Wallpaper CD Covers 1 + PDF Print](./showcase-images/screenshot-wallpaper-wcd1.jpg)
+![HTML Wallpaper CD Cover 1](./showcase-images/screenshot-wallpaper-wcd1.jpg)
