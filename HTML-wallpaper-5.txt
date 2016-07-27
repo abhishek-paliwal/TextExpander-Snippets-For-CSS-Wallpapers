@@ -17,7 +17,7 @@ cat > $FILE <<- EOM
   margin: 20px auto;
 }
 .padded-multiline span {
-  background-color: rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 1.0`);
+  background-color: rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0.2 0.5`);
   color: #fff;
   display: inline;
   padding: 0.5rem;
