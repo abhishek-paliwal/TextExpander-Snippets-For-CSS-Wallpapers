@@ -1,0 +1,91 @@
+#! /bin/bash
+# This script generate a random html wallpaper file from the clipboard.
+FILE="/Users/abhishek/Desktop/_TMP_Automator_results_/TMP-wallpaper-WCD1.html";
+cat > $FILE <<- EOM
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Google fonts stylesheet declaration; it's always the latest from Google. -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+    <style>
+        body {
+            display: block;
+            margin: 0px;
+        }
+
+        .module {
+            margin: 0px;
+            width: 800px;
+            height: 800px;
+            float: left;
+            background: url(https://source.unsplash.com/random/800x800/);
+            background-size: cover;
+            position: relative;
+        }
+
+        h2 {
+            position: absolute;
+            bottom: 125px;
+            left: 125px;
+            right: 125px;
+            top: 125px;
+            background: rgba(0, 0, 0, 0.75);
+            padding: 50px;
+            color: white;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: %filltext:name=FONTSIZE:default=60%px;
+            text-align: center;
+            letter-spacing: 20px;
+            text-transform: uppercase;
+            line-height:%filltext:name=LINEHEIGHT:default=1%;
+        }
+
+        .opp h2 {
+            background: rgba(255, 255, 255, 0.75);
+            color: black;
+            vertical-align: middle;
+        }
+        /* Rules for sizing the icon. */
+
+        .material-icons.md-size {
+            font-size: 90px;
+            color: rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`);
+        }
+
+        @media print {
+        div {page-break-before: always;}
+        @page {
+        size: 8.34in 8.34in;
+}
+       }
+    </style>
+    <title>HTML Wallpaper CD Covers 1  + PDF Print</title>
+</head>
+<body>
+    <div class="module">
+        <h2><i class="material-icons md-size">library_music</i><br><br>
+        %clipboard<br><br>
+        <i class="material-icons md-size">linear_scale</i>
+        </h2>
+    </div>
+    <div class="module opp">
+      <h2><i class="material-icons md-size">library_music</i><br><br>
+      %clipboard<br><br>
+      <i class="material-icons md-size">linear_scale</i>
+      </h2>
+    </div>
+</body>
+</html>
+EOM
+
+############################################################
+open -a /Applications/Google\ Chrome.app $FILE
+############################################################
+
+############################################################
+## This TextExpander Snippet Settings:
+## Label: HTML Wallpaper CD Covers 1 + PDF Print
+## Abbreviation: ..wcd1
+############################################################
