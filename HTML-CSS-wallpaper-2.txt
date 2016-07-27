@@ -1,0 +1,80 @@
+#! /bin/bash
+# This script generate a random html wallpaper file from the clipboard.
+FILE="/Users/abhishek/Desktop/_TMP_Automator_results_/TMP-wallpaper-2.html";
+cat > $FILE <<- EOM
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+
+body {
+    display: block;
+    margin: 0px;
+}
+/*In .module, the gradient is from top to bottom*/
+/* Change the rgba values to change the gradient colors.*/
+.module {
+  background:
+    linear-gradient(
+      rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 1.0`),
+      rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 1.0`)
+    ),
+ url(https://source.unsplash.com/random/%filltext:name=width:default=800%x%filltext:name=height:default=800%/);
+  background-size: cover;
+  width: %filltext:name=width%px;
+  height: %filltext:name=height%px;
+  margin: 0px 0px 0px 0px;
+  position: relative;
+  float: left;
+}
+
+.top h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  font-size: %filltext:name=field 5:default=4%rem;
+}
+
+.mid h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: white;
+  text-transform: capitalize;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: %filltext:name=field 5:default=4%rem;
+  transform: translate(-50%, -50%);
+}
+
+@media print {
+    div {page-break-before: always;}
+}
+</style>
+</head>
+<body>
+
+<div class="module top">
+  <h2>%clipboard</h2>
+</div>
+
+<div class="module mid">
+  <h2>%clipboard</h2>
+</div>
+
+</body>
+</html>
+EOM
+
+open -a /Applications/Google\ Chrome.app $FILE
+#############################################################
+
+############################################################
+## This TextExpander Snippet Settings:
+## Label: HTML wallpaper 2
+## Abbreviation: ..w2
+############################################################

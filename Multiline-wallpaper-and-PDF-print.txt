@@ -1,0 +1,72 @@
+#! /bin/bash
+# This script generate a random html wallpaper file from the clipboard.
+FILE="/Users/abhishek/Desktop/_TMP_Automator_results_/TMP-wallpaper-wm0.html";
+TMPTXT="/Users/abhishek/Desktop/_TMP_Automator_results_/TMP.txt";
+echo "%clipboard" > $TMPTXT;
+#######################
+cat > $FILE <<- EOM
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://use.fontawesome.com/8cd0876759.js"></script>
+<!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">  -->
+<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+<style>
+div {
+    float:left;
+    width: 350px;
+    height:350px;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    /* font-family: 'Roboto Condensed', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    font-size: %filltext:name=FONTSIZE:default=30%px;
+    font-weight:300;
+    line-height:1;
+    text-transform: capitalize;
+}
+mark {
+    background-color: rgba(0,0,0,0); /* making the background highlight totally transparent*/
+    color: white;
+    font-size: 15px;
+    font-weight:700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+@media print {
+    @page {size: 4.4in 4.4in; margin: 10px;}
+    div {page-break-before: always;}
+    table, figure { page-break-inside: avoid;}
+}
+</style>
+
+</head>
+<body>
+<!-- Some example text to copy and see how it works out. COPY the lines below, and run this TextExpander Snippet abbreviation.
+Example quote sentence number 1.<br><br><mark>Author1</mark>
+Example quote sentence number 2.<br><br><mark>Author2</mark>
+Example quote sentence number 3.<br><br><mark>Author3</mark>
+Example quote sentence number 4.<br><br><mark>Author4</mark>
+-->
+EOM
+
+while read x; do
+t1="<div style=\"background-color:rgba";
+colorx="("$(jot -r 1 0 255)","$(jot -r 1 0 255)","$(jot -r 1 0 255)","$(jot -r 1 1 1)")";
+t2=";\"><i class=\"fa fa-quote-left fa-%filltext:name=ICONSIZE:default=2%x\"></i><br>$x</div>";
+echo $t1$colorx$t2 >> $FILE
+done <$TMPTXT
+
+echo "</body></html>" >> $FILE;
+
+############################################################
+open -a /Applications/Google\ Chrome.app $FILE
+############################################################
+
+############################################################
+## This TextExpander Snippet Settings:
+## Label: Wallpaper Multiline + PDF print
+## Abbreviation: ..wm0
+############################################################

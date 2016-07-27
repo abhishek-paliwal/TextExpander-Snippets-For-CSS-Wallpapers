@@ -1,0 +1,50 @@
+#! /bin/bash
+# This script generate a random html wallpaper file from the clipboard.
+FILE="/Users/abhishek/Desktop/_TMP_Automator_results_/TMP-wallpaper-8.html";
+cat > $FILE <<- EOM
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://use.fontawesome.com/8cd0876759.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+<style>
+
+div {
+    /* width: 600px; */
+   height:1500px;
+    padding: 20px;
+    margin: 0px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: %filltext:name=FONTSIZE:default=150%px;
+    line-height:0.9;
+    text-transform: lowercase;
+}
+
+#text1 {word-spacing: 9999999px; color:rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`);}
+#p1 {word-spacing: 9999999px; background-color:rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`);}
+
+@media print {
+    h1,div {page-break-before: always;}
+}
+</style>
+
+</head>
+<body>
+
+<div id="text1"><i class="fa fa-book fa-2x"></i><br>%clipboard</div>
+<div id="p1"><i class="fa fa-book fa-2x"></i><br>%clipboard</div>
+
+</body>
+</html>
+EOM
+
+open -a /Applications/Google\ Chrome.app $FILE
+
+
+############################################################
+############################################################
+## This TextExpander Snippet Settings:
+## Label: HTML Wallpaper + Book Cover
+## Abbreviation: ..w8
+############################################################

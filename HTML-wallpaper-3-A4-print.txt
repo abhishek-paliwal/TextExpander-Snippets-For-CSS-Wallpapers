@@ -1,0 +1,147 @@
+#! /bin/bash
+# This script generate a random html wallpaper file from the clipboard.
+FILE="/Users/abhishek/Desktop/_TMP_Automator_results_/TMP-wallpaper-3.html";
+cat > $FILE <<- EOM
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html,
+body,
+section,
+.container {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+}
+.island {
+  max-width: 40em;
+  margin: auto;
+  position: relative;
+  padding: 10% 0;
+  z-index: 10;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.splash {
+  position: relative;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://source.unsplash.com/random");
+  /* background-image: url("https://unsplash.it/1920/1920?random"); */
+  text-align: center;
+  color: #fff;
+}
+.splash--title {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 4em;
+  border: 2px solid #fff;
+  border-left: 0;
+  border-right: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+.splash--subtitle {
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  line-height: 2.875rem;
+}
+.splash:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background: rgba(0,0,0,0.5);
+}
+a {
+  display: inline-block;
+  padding: 20px 0 3px 0;
+  position: relative;
+  color: #3498db;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+}
+a:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  -webkit-transition: width 0.5s ease, background-color 0.5s ease;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+a:hover:after {
+  width: 100%;
+  background: #fff;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <section class="splash">
+    <div class="island">
+
+      <h1 class="splash--title"><strong>%clipboard</strong></h1>
+      <h2 class="splash--subtitle">%clipboard</h2><a href="http://www.concepro.com">// Designed by //<br>CONCEPRO DIGITAL MARKETING AGENCY</a>
+
+    </div>
+  </section>
+</div>
+
+</body>
+</html>
+EOM
+
+open -a /Applications/Google\ Chrome.app $FILE
+
+############################################################
+############################################################
+## This TextExpander Snippet Settings:
+## Label: HTML wallpaper 3 + A4 cover
+## Abbreviation: ..w3
+############################################################

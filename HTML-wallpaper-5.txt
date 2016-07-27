@@ -1,0 +1,53 @@
+#! /bin/bash
+# This script generate a random html wallpaper file from the clipboard.
+FILE="/Users/abhishek/Desktop/_TMP_Automator_results_/TMP-wallpaper-5.html";
+cat > $FILE <<- EOM
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+
+.padded-multiline {
+  background: url(https://source.unsplash.com/random/%filltext:name=width:default=800%x%filltext:name=height:default=800%/);
+  line-height: 1.6;
+  padding: 120px 50px 50px 50px;
+  width: 700px;
+  height: 600px;
+  margin: 20px auto;
+}
+.padded-multiline span {
+  background-color: rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 1.0`);
+  color: #fff;
+  display: inline;
+  padding: 0.5rem;
+  font-size: 1.75em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+text-transform: uppercase;
+
+  /* Needs prefixing */
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+</style>
+</head>
+<body>
+
+<h1 class="padded-multiline">
+  <span>%clipboard</span>
+</h1>
+
+</body>
+</html>
+EOM
+
+open -a /Applications/Google\ Chrome.app $FILE
+
+
+############################################################
+############################################################
+## This TextExpander Snippet Settings:
+## Label: HTML Wallpaper 5
+## Abbreviation: ..w5
+############################################################

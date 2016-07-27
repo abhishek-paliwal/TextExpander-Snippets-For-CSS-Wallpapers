@@ -1,0 +1,61 @@
+#! /bin/bash
+# This script generate a random html wallpaper file from the clipboard.
+FILE="/Users/abhishek/Desktop/_TMP_Automator_results_/TMP-wallpaper-4.html";
+cat > $FILE <<- EOM
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    display: block;
+    margin: 0px;
+}
+.module {
+  margin: 10px;
+  width: %filltext:name=width:default=800%px;
+  height: %filltext:name=height:default=800%px;
+  float: left;
+  background:  url(https://source.unsplash.com/random/%filltext:name=width:default=800%x%filltext:name=height:default=800%/);
+  background-size: cover;
+  position: relative;
+}
+
+h2 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 4px 8px;
+  color: white;
+  margin: 0;
+  font: 60px Sans-Serif;
+}
+
+.opp h2 {
+  background: rgba(255, 255, 255, 0.75);
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<div class="module">
+  <h2>%clipboard</h2>
+</div>
+<div class="module opp">
+  <h2>%clipboard</h2>
+</div>
+
+</body>
+</html>
+EOM
+
+open -a /Applications/Google\ Chrome.app $FILE
+
+
+############################################################
+############################################################
+## This TextExpander Snippet Settings:
+## Label: HTML wallpaper 4
+## Abbreviation: ..w4
+############################################################

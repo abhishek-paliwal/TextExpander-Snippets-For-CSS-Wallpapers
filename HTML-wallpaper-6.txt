@@ -1,0 +1,65 @@
+#! /bin/bash
+# This script generate a random html wallpaper file from the clipboard.
+FILE="/Users/abhishek/Desktop/_TMP_Automator_results_/TMP-wallpaper-6.html";
+cat > $FILE <<- EOM
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+
+.module {
+  background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/random/%filltext:name=width:default=800%x%filltext:name=height:default=800%/);
+  width: %filltext:name=width:default=800%px;
+  height: %filltext:name=height:default=800%px;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.module > header {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+}
+
+.module > header > h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 0 1px 0 black;
+font-size: 1.75em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+text-transform: capitalize;
+}
+
+* {
+  box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+<div class="module">
+
+  <header>
+    <h1>
+      %clipboard
+    </h1>
+  </header>
+</div>
+
+</body>
+</html>
+EOM
+
+open -a /Applications/Google\ Chrome.app $FILE
+
+
+############################################################
+############################################################
+## This TextExpander Snippet Settings:
+## Label: HTML Wallpaper 6
+## Abbreviation: ..w6
+############################################################

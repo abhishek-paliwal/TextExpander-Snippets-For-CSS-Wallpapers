@@ -1,0 +1,47 @@
+#! /bin/bash
+# This script generate a random html wallpaper file from the clipboard.
+FILE="/Users/abhishek/Desktop/_TMP_Automator_results_/TMP-wallpaper-7.html";
+cat > $FILE <<- EOM
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+
+h1 {
+    display: inline;
+    position: absolute;
+    font-size: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0.5 0.6`);
+}
+h1:after {
+    content: "%clipboard";
+    position: absolute;
+    left: 5px;
+    top: 3px;
+    color: rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0.4 0.6`);
+}
+</style>
+</head>
+<body>
+
+    <h1>
+      %clipboard
+    </h1>
+
+</body>
+</html>
+EOM
+
+open -a /Applications/Google\ Chrome.app $FILE
+
+
+############################################################
+############################################################
+## This TextExpander Snippet Settings:
+## Label: HTML wallpaper 7
+## Abbreviation: ..w7
+############################################################
