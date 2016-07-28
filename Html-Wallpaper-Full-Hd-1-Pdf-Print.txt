@@ -1,0 +1,92 @@
+#! /bin/bash
+# This script generate a random html wallpaper file from the clipboard.
+FILE="/Users/abhishek/Desktop/_TMP_Automator_results_/TMP-wallpaper-WCD1.html";
+cat > $FILE <<- EOM
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Google fonts stylesheet declaration; it's always the latest from Google. -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+    <style>
+        body {
+            display: block;
+            margin: 0px;
+        }
+
+        .module {
+            margin: 0px;
+            width: 1920px;
+            height: 1080px;
+            float: left;
+            /* Enter a number between 1 to 30 below */
+            background: url(http://downloads.concepro.com/30-Free-Polygonal-Low-Poly-Textures/low-poly-texture-%filltext:name=FILENUM:default=11%.jpg);
+            background-size: cover;
+            position: relative;
+        }
+
+        h2 {
+            position: absolute;
+            bottom: 150px;
+            left: 150px;
+            right: 150px;
+            top: 150px;
+            background: rgba(0, 0, 0, 0.75);
+            padding: 50px;
+            color: white;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: %filltext:name=FONTSIZE:default=80%px;
+            text-align: center;
+            letter-spacing: 20px;
+            text-transform: uppercase;
+            line-height:%filltext:name=LINEHEIGHT:default=1%;
+        }
+
+        .opp h2 {
+            background: rgba(255, 255, 255, 0.75);
+            color: black;
+            vertical-align: middle;
+        }
+        /* Rules for sizing the icon. */
+
+        .material-icons.md-size {
+            font-size: 90px;
+            color: rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`);
+        }
+
+        @media print {
+        div {page-break-before: always;}
+        @page {
+        size: 19.2in 10.8in;
+}
+       }
+    </style>
+    <title>HTML Wallpaper CD Covers 1  + PDF Print</title>
+</head>
+<body>
+    <div class="module">
+        <h2><i class="material-icons md-size">library_music</i><br><br>
+        %clipboard<br><br>
+        <i class="material-icons md-size">linear_scale</i>
+        </h2>
+    </div>
+    <div class="module opp">
+      <h2><i class="material-icons md-size">library_music</i><br><br>
+      %clipboard<br><br>
+      <i class="material-icons md-size">linear_scale</i>
+      </h2>
+    </div>
+</body>
+</html>
+EOM
+
+############################################################
+open -a /Applications/Google\ Chrome.app $FILE
+############################################################
+
+############################################################
+## This TextExpander Snippet Settings:
+## Label: HTML Wallpaper FULL HD + PDF Print
+## Abbreviation: ..whd1
+############################################################
