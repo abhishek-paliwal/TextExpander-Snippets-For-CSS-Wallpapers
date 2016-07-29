@@ -1,6 +1,6 @@
 #! /bin/bash
 # This script generate a random html wallpaper file from the clipboard.
-FILE="/Users/abhishek/Desktop/_TMP_Automator_results_/TMP-wallpaper-WCD1.html";
+FILE="/Users/abhishek/Desktop/_TMP_Automator_results_/TMP-wallpaper-WHD1.html";
 cat > $FILE <<- EOM
 <!DOCTYPE html>
 <html>
