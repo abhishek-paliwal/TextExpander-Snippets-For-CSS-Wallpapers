@@ -15,40 +15,40 @@
 
 ### Here's how the generated wallpapers look like:
 
-#### HTML Wallpaper 1:
+#### 1-HTML Wallpaper 1:
 ![Wallpaper 1](./showcase-images/screenshot-wallpaper-1.jpg)
 
-#### HTML Wallpaper 2:
+#### 2-HTML Wallpaper 2:
 ![Wallpaper 2](./showcase-images/screenshot-wallpaper-2.jpg)
 
-#### HTML Wallpaper 3 + A4 Book Cover:
+#### 3-HTML Wallpaper 3 + A4 Book Cover:
 ![Wallpaper 3](./showcase-images/screenshot-wallpaper-3.jpg)
 
-#### HTML Wallpaper 4:
+#### 4-HTML Wallpaper 4:
 ![Wallpaper 4](./showcase-images/screenshot-wallpaper-4.jpg)
 
-#### HTML Wallpaper 5:
+#### 5-HTML Wallpaper 5:
 ![Wallpaper 5](./showcase-images/screenshot-wallpaper-5.jpg)
 
-#### HTML Wallpaper 6:
+#### 6-HTML Wallpaper 6:
 ![Wallpaper 6](./showcase-images/screenshot-wallpaper-6.jpg)
 
-#### HTML Wallpaper 7:
+#### 7-HTML Wallpaper 7:
 ![Wallpaper 7](./showcase-images/screenshot-wallpaper-7.jpg)
 
-#### HTML Wallpaper 8 + A4 Book Cover:
+#### 8-HTML Wallpaper 8 + A4 Book Cover:
 ![Wallpaper 8](./showcase-images/screenshot-wallpaper-8.jpg)
 
-#### HTML Wallpaper 0 Multiline Quote Boxes with Square Pdf Print:   
+#### 9-HTML Wallpaper 0 Multiline Quote Boxes with Square Pdf Print:   
 [Sample text file for clipboard here](sample-and-output-files/sample-quotes-text-for-multiline-wallpaper0.txt) | [Wallpaper HTML output here](sample-and-output-files/quotes_TMP-wallpaper-wm0.html)
 ![Wallpaper Multiline 0 with Blocks](./showcase-images/screenshot-wallpaper-multiline-0.jpg)
 
-#### HTML Wallpaper CD Covers 1 + PDF Print:
+#### 10-HTML Wallpaper CD Covers 1 + PDF Print:
 ![HTML Wallpaper CD Cover 1](./showcase-images/screenshot-wallpaper-wcd1.jpg)
 
-#### Html Wallpaper Full HD 1 with PDF Print:     
+#### 11-HTML Wallpaper Full HD 1 with PDF Print:     
 [Collage List of Poly backgrounds used in this are here](showcase-images/screenshot-wallpaper-fullHD1-backgrounds.jpg)    
 ![Html-Wallpaper-Full-HD-1-Pdf-Print](./showcase-images/screenshot-wallpaper-fullHD1.jpg)
 
-#### HTML wallpaper - 280x420px + PDF multipage print:
+#### 12-HTML wallpaper - 280x420px + PDF multipage print:
 ![HTML Wallpaper MGK 1 280x420 ratio](showcase-images/screenshot-wallpaper-wmgk1.jpg)
