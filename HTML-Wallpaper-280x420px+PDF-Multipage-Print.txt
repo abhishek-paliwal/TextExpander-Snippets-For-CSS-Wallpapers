@@ -19,11 +19,12 @@ div {
     margin: 0px;
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: %filltext:name=FONTSIZE:default=50%px;
+    font-size: %filltext:name=FONTSIZE:default=45%px;
     line-height:0.9;
     text-transform: uppercase;
 }
 
+#pcover {background-color:rgba(0, 0, 0, 1);}
 #p1 {background-color:rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`);}
 #p2 {background-color:rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`);}
 #p3 {background-color:rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`);}
@@ -31,9 +32,6 @@ div {
 #p5 {background-color:rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`);}
 #text1 {color:rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`);}
 #text2 {color:rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`);}
-#text3 {color:rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`);}
-#text4 {color:rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`);}
-#text5 {color:rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`);}
 
 @media print {
     h1, div , #p1, #p2, #p3 {page-break-before: always;}
@@ -44,7 +42,7 @@ div {
 </head>
 <body>
 
-<div id="p5">STEPS: PRINT THIS AS A PDF <code>(cmd+p)</code>. THEN CREATE Images from its pages.</div>
+<div id="pcover"><i class="fa fa-hand-o-down fa-%filltext:name=ICONSIZE:default=2%x"></i><br>Steps: Print This As A Pdf. Then Create Images From Its Pages.</div>
 <div id="p1"><i class="fa fa-quote-left fa-%filltext:name=ICONSIZE:default=2%x"></i><br>%clipboard</div>
 <div id="p2"><i class="fa fa-quote-left fa-%filltext:name=ICONSIZE:default=2%x"></i><br>%clipboard</div>
 <div id="p3"><i class="fa fa-quote-left fa-%filltext:name=ICONSIZE:default=2%x"></i><br>%clipboard</div>
@@ -52,9 +50,6 @@ div {
 <div id="p5"><i class="fa fa-quote-left fa-%filltext:name=ICONSIZE:default=2%x"></i><br>%clipboard</div>
 <div id="text1"><i class="fa fa-quote-left fa-%filltext:name=ICONSIZE:default=2%x"></i><br>%clipboard</div>
 <div id="text2"><i class="fa fa-quote-left fa-%filltext:name=ICONSIZE:default=2%x"></i><br>%clipboard</div>
-<div id="text3"><i class="fa fa-quote-left fa-%filltext:name=ICONSIZE:default=2%x"></i><br>%clipboard</div>
-<div id="text4"><i class="fa fa-quote-left fa-%filltext:name=ICONSIZE:default=2%x"></i><br>%clipboard</div>
-<div id="text5"><i class="fa fa-quote-left fa-%filltext:name=ICONSIZE:default=2%x"></i><br>%clipboard</div>
 
 </body>
 </html>
