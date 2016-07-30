@@ -20,7 +20,7 @@ cat > $FILE <<- EOM
             height: 1080px;
             float: left;
             /* Enter a number between 1 to 30 below */
-            background: url(http://downloads.concepro.com/30-Free-Polygonal-Low-Poly-Textures/low-poly-texture-%filltext:name=FILENUM:default=11%.jpg);
+            background: url(http://downloads.concepro.com/30-Free-Polygonal-Low-Poly-Textures/low-poly-texture-`jot -r 1 1 30`.jpg);
             background-size: cover;
             position: relative;
         }
@@ -87,6 +87,6 @@ open -a /Applications/Google\ Chrome.app $FILE
 
 ############################################################
 ## This TextExpander Snippet Settings:
-## Label: HTML Wallpaper FULL HD + PDF Print
+## Label: HTML Wallpaper FULL HD 1 + PDF Print
 ## Abbreviation: ..whd1
 ############################################################
