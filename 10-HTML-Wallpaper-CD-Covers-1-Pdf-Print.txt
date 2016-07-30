@@ -86,6 +86,6 @@ open -a /Applications/Google\ Chrome.app $FILE
 
 ############################################################
 ## This TextExpander Snippet Settings:
-## Label: HTML Wallpaper CD Covers 1 + PDF Print
+## Label: 10-HTML Wallpaper CD Covers 1 + PDF Print
 ## Abbreviation: ..wcd1
 ############################################################

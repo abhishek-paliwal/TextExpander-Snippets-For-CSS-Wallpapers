@@ -87,6 +87,6 @@ open -a /Applications/Google\ Chrome.app $FILE
 
 ############################################################
 ## This TextExpander Snippet Settings:
-## Label: HTML Wallpaper FULL HD 1 + PDF Print
+## Label: 11-HTML Wallpaper FULL HD 1 + PDF Print
 ## Abbreviation: ..whd1
 ############################################################

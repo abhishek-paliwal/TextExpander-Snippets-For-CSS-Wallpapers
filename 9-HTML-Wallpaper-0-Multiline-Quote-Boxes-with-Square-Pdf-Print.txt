@@ -67,6 +67,6 @@ open -a /Applications/Google\ Chrome.app $FILE
 
 ############################################################
 ## This TextExpander Snippet Settings:
-## Label: Wallpaper Multiline + PDF print
+## Label: 9-Wallpaper Multiline + PDF print
 ## Abbreviation: ..wm0
 ############################################################

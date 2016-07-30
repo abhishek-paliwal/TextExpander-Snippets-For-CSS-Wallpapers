@@ -55,6 +55,6 @@ open -a /Applications/Google\ Chrome.app $FILE
 
 ############################################################
 ## This TextExpander Snippet Settings:
-## Label: HTML Wallpaper 1
+## Label: 1-HTML Wallpaper 1
 ## Abbreviation: ..w1
 ############################################################
