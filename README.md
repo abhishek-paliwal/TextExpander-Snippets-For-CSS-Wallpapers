@@ -49,3 +49,6 @@
 #### Html Wallpaper Full HD 1 with PDF Print:     
 [Collage List of Poly backgrounds used in this are here](showcase-images/screenshot-wallpaper-fullHD1-backgrounds.jpg)    
 ![Html-Wallpaper-Full-HD-1-Pdf-Print](./showcase-images/screenshot-wallpaper-fullHD1.jpg)
+
+#### HTML wallpaper - 280x420px + PDF multipage print:
+![HTML Wallpaper MGK 1 280x420 ratio](showcase-images/screenshot-wallpaper-wmgk1.jpg)
