@@ -22,6 +22,14 @@ div {
     /* text-transform: lowercase; */
 }
 
+.logoconcepro {
+	content:url("http://concepro.com/concepro-landing/images/concepro-logo-400px.png");
+}
+
+.logomggk{
+   content:url("http://www.mygingergarlickitchen.com/wp-content/uploads/2015/02/mggk-new-logo-transparent-150px.png");
+}
+
 #p1 {background-color:rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`);}
 #p2 {background-color:rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`);}
 #p3 {background-color:rgba(`jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 0 255`, `jot -r 1 1 1`);}
@@ -38,17 +46,47 @@ div {
 </head>
 <body>
 
-<div id="p1"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard</div>
-<div id="p2"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard</div>
-<div id="p3"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard</div>
-<div id="p4"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard</div>
-<div id="p5"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard</div>
-<div id="text1"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard</div>
-<div id="text2"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard</div>
+<div id="p1"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard<br>+<br>
+<img class="logoconcepro" height="90px"/></div>
+
+<div id="p2"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard<br>+<br>
+<img class="logoconcepro" height="90px"/></div>
+
+<div id="p3"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard<br>+<br>
+<img class="logoconcepro" height="90px"/></div>
+
+<div id="p4"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard<br>+<br>
+<img class="logoconcepro" height="90px"/></div>
+
+<div id="p5"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard<br>+<br>
+<img class="logoconcepro" height="90px"/></div>
+
+<div id="text1"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard<br>+<br>
+<img class="logoconcepro" height="90px"/></div>
+
+<div id="text2"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard<br>+<br>
+<img class="logoconcepro" height="90px"/></div>
+
+
+<!-- WALLPAPER WITH ANOTHER LOGO -->
+
+<div id="p1"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard<br>+<br>
+<img class="logomggk" height="90px"/></div>
+
+<div id="p2"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard<br>+<br>
+<img class="logomggk" height="90px"/></div>
+
+<div id="text1"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard<br>+<br>
+<img class="logomggk" height="90px"/></div>
+
+<div id="text2"><i class="fa fa-quote-left fa-2x"></i><br>%clipboard<br>+<br>
+<img class="logomggk" height="90px"/></div>
+
 
 </body>
 </html>
 EOM
+
 ############################################################
 open -a /Applications/Google\ Chrome.app $FILE
 ############################################################
